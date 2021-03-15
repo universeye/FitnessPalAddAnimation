@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		BF2B0A2625EF300E00B20BE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2B0A2425EF300E00B20BE1 /* LaunchScreen.storyboard */; };
 		BF2B0A3125EF300E00B20BE1 /* FitnessPalAddAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B0A3025EF300E00B20BE1 /* FitnessPalAddAnimationTests.swift */; };
 		BF2B0A3C25EF300E00B20BE1 /* FitnessPalAddAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B0A3B25EF300E00B20BE1 /* FitnessPalAddAnimationUITests.swift */; };
+		BFFA18C725EFA48000EC53D0 /* PureSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BFFA18C625EFA48000EC53D0 /* PureSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFFA18C725EFA48000EC53D0 /* PureSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +154,9 @@
 			dependencies = (
 			);
 			name = FitnessPalAddAnimation;
+			packageProductDependencies = (
+				BFFA18C625EFA48000EC53D0 /* PureSwiftUI */,
+			);
 			productName = FitnessPalAddAnimation;
 			productReference = BF2B0A1625EF300D00B20BE1 /* FitnessPalAddAnimation.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +228,9 @@
 				Base,
 			);
 			mainGroup = BF2B0A0D25EF300D00B20BE1;
+			packageReferences = (
+				BFFA18C525EFA48000EC53D0 /* XCRemoteSwiftPackageReference "pure-swift-ui" */,
+			);
 			productRefGroup = BF2B0A1725EF300D00B20BE1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -597,6 +605,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BFFA18C525EFA48000EC53D0 /* XCRemoteSwiftPackageReference "pure-swift-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CodeSlicing/pure-swift-ui.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BFFA18C625EFA48000EC53D0 /* PureSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFFA18C525EFA48000EC53D0 /* XCRemoteSwiftPackageReference "pure-swift-ui" */;
+			productName = PureSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BF2B0A0E25EF300D00B20BE1 /* Project object */;
 }
